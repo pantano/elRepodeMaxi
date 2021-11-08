@@ -1,0 +1,130 @@
+/* Menu Login */
+.menuLogin{
+ padding-top: 2rem;
+
+}
+.botonLogin{
+  text-align: end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.botonLogin li{
+  display: inline;
+  
+}
+.botonLogin a{
+  padding-left: 1rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black
+}
+
+.botonLogin a:hover{
+  color: rgb(0, 168, 168);
+}
+
+
+
+/* -----------card YT */
+.cardYT{
+display: flex;
+justify-content: center;
+padding-top: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
+
+/*------------ FOOTER */
+footer{
+  background-color: rgb(196, 196, 196);
+}
+.footerStyle {
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  color: black;
+}
+
+.footerFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.menuFlex {
+  
+  display: flex;
+  justify-content: space-around;
+}
+
+.columna1 {
+  width: 33%;
+  text-align: center;
+  padding-right: 1rem;
+}
+.columna1 a:hover{
+text-decoration: underline;
+color: grey;
+}
+
+.columna2 {
+  width: 33%;
+  text-align: start;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.columna3 {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+.columna3-1 {
+  padding-bottom: 2rem;
+}
+.tituloFooter {
+  text-align: center;
+  font-size: 16px;
+}
+.mapaFooter {
+  list-style: none;
+  padding: 0;
+}
+.mapaFooter a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.redes {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+  
+}
+
+
+.redes li{
+  display: inline;
+  padding: 0.5rem;  
+}
+
+.logoRedes img{
+  width: 10%;
+
+}
+
+
+.footerCreditoFinal {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+
+
+
+
+
