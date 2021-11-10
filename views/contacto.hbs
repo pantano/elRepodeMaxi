@@ -21,7 +21,7 @@
             <div class="card-body text-center">
                 <h5 class="card-title">Dejanos tus consultas</h5>
             </div>
-            <form action="" onsubmit="return validarFormConsultas()">
+            <form action="/send-mail" onsubmit="return validarFormConsultas()">
                 <div class="mb-3 form-control-md">
                     <div class="">
                         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="text-end">
-                        <input class="btn btn-outline-primary" type="submit" value="Enviar" />
+                        <input class="btn btn-primary" type="submit" value="Enviar" />
                     </div>
                 </div>
             </form>
@@ -57,6 +57,9 @@
 
     <!-- js main -->
     <script src="js/main.js"></script>
+
+    {{!-- font Awesome --}}
+    <script src="https://kit.fontawesome.com/0aadeda942.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

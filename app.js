@@ -1,16 +1,16 @@
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
-const hbs = require('hbs');
-const mysql = require('mysql');
-
 const app = express();
+const hbs = require('hbs');
+
 const port = process.env.PORT;
 
 //Middlewares
 app.use(express.static('public')); // contenido estático
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+app.use(require('./routes/routes'));
 
 //Settings
 app.set('views', path.join(__dirname,'views'));
@@ -64,20 +64,6 @@ app.get('/nosotros',(req, res)=>{
         encabezado: 'QUIENES SOMOS',
         nombre:'Nosotros'
     });
-});
-
-
-//Conexión base de datos
-const conn = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'',
-    database:'aim-service'
-});
-
-conn.connect((err)=>{
-    if(err) throw err;
-    console.log('Conexión establecida...');
 });
 
 
