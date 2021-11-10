@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const nodemailer = require('nodemailer');
 const router = new Router();
 const mysql = require('mysql');
 
@@ -17,22 +18,22 @@ conn.connect((err) => {
 });
 
 // Nodemailer
-router.post('/send-mail', (req, res) => {
+router.post('/send-email', (req, res) => {
     const transporter = nodemailer.createTransport({
         host: 'smtp.ethereal.email',
         port: 587,
+        secure: false,
         auth: {
-            user: 'buster.buckridge58@ethereal.email',
-            pass: 'Xzd7zmqXdkjMWDS54P'
+            user: 'benton.kling24@ethereal.email',
+            pass: 'xdzZyUAwxh8ZttVE2Q'
         }
     });
 
-
     const mailOptions = {
-        from: '',
-        to: '',
-        subject: '',
-        text: '',
+        from: 'fulano',
+        to: 'benton.kling24@ethereal.email',
+        subject: 'testeando',
+        text: 'hola que tal, ',
     }
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -41,9 +42,12 @@ router.post('/send-mail', (req, res) => {
         } else {
             console.log('Email enviado');
             res.status(200).jsonp(reqbody);
+            
         }
+    res.redirect('/email-enviado');
     });
 });
+
 
 
 module.exports = router;

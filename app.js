@@ -65,6 +65,12 @@ app.get('/nosotros',(req, res)=>{
         nombre:'Nosotros'
     });
 });
+app.get('/email-enviado',(req, res)=>{
+    res.render('enviado',{
+        titulo:'AIM Service',
+    });
+});
+
 
 
 //Server Listening
