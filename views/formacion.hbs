@@ -11,27 +11,31 @@
 </head>
 
 <body>
-
-    {{>header}}
     {{>nav}}
-    {{>headerPage}}
-    
+    {{>header}}
+
+    <div class="container pt-4 pb-4">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus corrupti deserunt odio harum
+                similique laboriosam minus veritatis vero, dicta officiis quibusdam numquam ratione eveniet quod veniam
+                porro laborum labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam porro
+                accusamus nihil magnam voluptatem mollitia, molestiae recusandae, ab, tempora fuga esse ducimus debitis.
+                Vitae sit porro nemo nam adipisci?</p>
+        </div>
+        <div class="pt-1 pb-2 text-center">
+            <a href="#" class="btn btn-info ">Ingresar al Aular Virtual</a>
+        </div>
+        <div class="d-flex justify-content-center pt-3 ">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TbV2FA_9Mvs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
 
     {{>footer}}
 
-    <!-- Libreria popper -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-        crossorigin="anonymous"></script>
 
-    <!-- Archivo js compilado -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- js main -->
-    <script src="js/main.js"></script>
-
-    {{!-- font Awesome --}}
-    <script src="https://kit.fontawesome.com/0aadeda942.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
