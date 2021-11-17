@@ -20,8 +20,8 @@
             <div class="card-body text-center">
                 <h5 class="card-title">Dejanos tus consultas</h5>
             </div>
-            <form action="/send-email" method="post" onsubmit="return validarFormConsultas()">
-                <div class="mb-3 form-control-md">
+            <form action="/send-email" method="post" class="mb-4" onsubmit="return validarFormConsultas()">
+                <div class="form-control-md">
                     <div class="">
                         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                         <input type="text" class="form-control" name="nombre" id="nombre" placeholder="" />
@@ -44,6 +44,7 @@
             </form>
         </div>
     </div>
+
     {{>footer}}
 
 
