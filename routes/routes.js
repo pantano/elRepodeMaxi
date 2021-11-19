@@ -32,6 +32,12 @@ router.get('/productos', (req, res) => {
 }); 
 
 //Handlebars
+router.get('/admin', (req, res)=>{
+    res.render('admin',{
+       titulo: 'Panel de Admin'
+    });
+});
+
 router.get('/', (req, res)=>{
     res.render('home',{
        titulo: 'AIM Service'
