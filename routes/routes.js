@@ -32,9 +32,9 @@ router.get('/productos', (req, res) => {
 }); 
 
 //Handlebars
-router.get('/admin', (req, res)=>{
-    res.render('admin',{
-       titulo: 'Panel de Admin'
+router.get('/login', (req, res)=>{
+    res.render('login',{
+       titulo: 'App AIM Login'
     });
 });
 
